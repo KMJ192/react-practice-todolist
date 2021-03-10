@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import styled, { StyledComponent } from 'styled-components';
+import styled from 'styled-components';
 
 const TodoTemplateBlock = styled.div`
     width: 512px;
@@ -8,7 +8,7 @@ const TodoTemplateBlock = styled.div`
     position: relative;
     background: white;
     border-radius:16px;
-    boxshadow: 0 0 8px rgba(0, 0, 0, 0.4);
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.4);
 
     margin: 0 auto;
     margin-top: 96px;
@@ -19,7 +19,7 @@ const TodoTemplateBlock = styled.div`
 `;
 
 function TodoTemplete({ children } : any) {
-    console.log(typeof(children));
+
     return (
         <TodoTemplateBlock>
             {children}

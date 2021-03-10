@@ -6,7 +6,7 @@ const TodoHeadBlock = styled.div`
     padding-left: 32px;
     padding-right: 32px;
     padding-bottom: 24px;
-    boarder-bottom: 1px solid #e9ecef;
+    border-bottom: 1px solid #e9ecef;
 
     h1{
         margin: 0;
@@ -21,15 +21,20 @@ const TodoHeadBlock = styled.div`
     }
 
     .task-left{
-        color: #20c997
+        color: #20c997;
+        font-size: 18px;
+        margin-top: 40px;
+        font-weight: bold;
     }
 `;
 
 function TodoHead() {
     return (
-        <div>
-
-        </div>
+        <TodoHeadBlock>
+            <h1>2021년 3월 10일</h1>
+            <div className="day">일요일</div>
+            <div className="tasks-left">할일 2개 남음</div>
+        </TodoHeadBlock>
     )
 }
 
